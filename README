@@ -1,15 +1,26 @@
-Tanjo Tanning Salon wanted a website that was a main access point for new clients to get in touch with her and to see the products she is selling and show pricing of those products. Due to Tanjo being a cash only company for now, Jo did not need any financial apps to run through her site such as credit, debit, paypal or afterpay.
+Tanjo Tanning Salon wanted a website that was a main access point for new clients to get in touch with her and to see 
+the products she is selling and show pricing of those products. Due to Tanjo being a cash only company for now, Jo did
+not need any financial apps to run through her site such as credit, debit, paypal or afterpay.
 
-In order to provide Jo with easy access to enquiries through her site i investigated other options outside of Strapi that were easier for Jo to currently manage while her business is so small. On research i found i was able to create a react form that prompted any enquiries by the contactus or bookings form directly to a GetForm.io Inbox set up for Jo. Like a normal inbox all Jo has to do is go to GetForm.io, enter her email "tanjotanning@gmail.com" and password "tanjotanning" in order to access her inbox which holds all enquireies that come directly from the site into that inbox.
+In order to provide Jo with easy access to enquiries through her site i investigated other options outside of Strapi 
+that were easier for Jo to currently manage while her business is so small. On research i found i was able to create 
+a react form that prompted any enquiries by the contactus or bookings form directly to a GetForm.io Inbox set up for Jo. 
+Like a normal inbox all Jo has to do is go to GetForm.io, enter her email "tanjotanning@gmail.com" and password "tanjotanning" 
+in order to access her inbox which holds all enquireies that come directly from the site into that inbox.
 
-On return from Jo's holiday this weekend, we have intended to meet up and talk about upgrading her GetForm account from a free restricted services to a monthly plan of $10.00 in order to set up a personalised Thank You page with specific links back to the homepage where we are able to also incorporate her brand. Currently it is set to their free Thank You page that returns to the previous page.
+On return from Jo's holiday this weekend, we have intended to meet up and talk about upgrading her GetForm account from 
+a free restricted services to a monthly plan of $10.00 in order to set up a personalised Thank You page with specific 
+links back to the homepage where we are able to also incorporate her brand. Currently it is set to their free Thank You 
+page that returns to the previous page.
 
 Your requirements as tutor:
 Please go to: getform.io
 Enter email address: tanjotanning@gmail.com
 Enter password: tanjotanning
 
-Please keep this tab open while you are marking website and using the forms. Once you submit one from the Tanjo Site you will be able to see it appear in the Tanjo Tanning GetForm Inbox. All security that is set by Get Form is also listed on the Help page under "Is my information secure here?".
+Please keep this tab open while you are marking website and using the forms. Once you submit one from the Tanjo Site 
+you will be able to see it appear in the Tanjo Tanning GetForm Inbox. All security that is set by Get Form is also 
+listed on the Help page under "Is my information secure here?".
 
 Enjoy! Please see below an outline of requirements and how i have met those.
 
@@ -90,7 +101,8 @@ Uses at least 2 special HTML5 features effectively:
     - Email as a property - email is used throughout contactus form
 
 
-Implements at least one of the following: • React.js (at least 4 components) • image sliders • Bootstrap for mobile responsiveness • any tool/technology that you have learnt as a result of your own research:
+Implements at least one of the following: • React.js (at least 4 components) • image sliders 
+• Bootstrap for mobile responsiveness • any tool/technology that you have learnt as a result of your own research:
     
     1. Image Sliders
 
