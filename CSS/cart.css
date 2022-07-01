@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.shopping-cart {width: 49%; height: 100%; background: #FFFFFF; box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10); border-radius: 20px; display: flex; flex-direction: column; padding-bottom: 60px;}
+.title {height: 74px; border-bottom: 2px solid #bc8d01; padding: 20px 30px; border-radius: 18px 18px 0px 0px; color: #fff; background-color: #06515a; font-size: 2em; font-weight: 540;}
+.item {padding: 20px 10px 20px 0; height: 140px; display: flex; justify-content: left; border-bottom:  1px solid #cc99005b;}
+.totalitem {padding: 0px 36px; height: 50px; display: flex; justify-content: right;}
+.totalitemresize {display: none;}
+
+/* Buttons -  Delete and Like */
+.buttons {position: relative; padding-top: 50px;  margin-right: 70px;}
+.like-btn {position: absolute; top: 25px; left: 0px; display: inline-block; background: url(../Images/twitter-heart.png); width: 50px; height: 50px; background-size: 2900%; background-repeat: no-repeat; cursor: pointer;}
+.is-active {animation-name: animate; animation-duration: .8s; animation-iteration-count: 1; animation-timing-function: steps(28); animation-fill-mode: forwards;}
+@keyframes animate {0%   { background-position: left;  } 50%  { background-position: right; } 100% { background-position: right; }}
+
+/* Product Image */
+.image {margin-right: 15px; width: 60px; height: 100px; text-align: center; padding:0px 5px;}
+.image img {height: 100%; width:auto;}
+
+/* Product Description */
+.description {padding-top: 32px; margin-right: 10px; width: 90px;}
+.description span {display: block; font-size: 1em; color: #075962; font-weight: 400;}
+.description span:first-child {margin-bottom: 3px;}
+.description span:last-child {font-size: .8em; margin-top: 3px; color: #cc9900;}
+
+/* Product Quantity */
+.quantity {padding-top: 38px; width: 80px; margin-right: 0; text-align: center; text-align: justify;}
+.quantity input {-webkit-appearance: none; border: none; text-align: center; width: 50px; font-size: 1em; color: #075962; font-weight: 300;}
+
+/*BUTTONS*/
+button[class*=btn] {width: 20px; height: 20px; background-color: #075962; border-radius: 6px; border: none; cursor: pointer;}
+.minus-btn img {margin-top: 3px;}
+.plus-btn img {margin-top: 2px;}
+button:focus, input:focus {outline:0;}
+
+/* quantity  */
+#quantitydark, #quantitymedium, #quantitylight {width: 25px; text-align: center; font-size: 1em; color: #075962; font-weight: 300;}
+
+/* price */
+#darkprice, #mediumprice, #lightprice {width: 60px; padding-top: 39px; text-align: right; font-size: 1.2em; color: #075962; font-weight: 300; margin-right: 0px;}
+
+/* Subtotal, GST, Total Text*/
+.TotalPricing {width: 100px; padding-top: 23px; text-align: center; font-size: 1.2em; color: #075962; font-weight: 400; margin-left: 5px;}
+
+/* total */
+#darkorderTotal, #mediumorderTotal, #lightorderTotal {
+width: 107px; padding-top: 0; padding-right:0; text-align: right; font-size: 1.5em; color: #CC9900; font-weight: 300; border: none; justify-content: right;}
+
+#SubTotal, #GST, #MainTotal{
+  width: 80px; padding-top: 16px; text-align: right; font-size: 1.5em; color: #CC9900; font-weight: 300; border: none; justify-content: right;}
+
+#SubTotal, #GST, #MainTotal{ color: #cc9900;}
+.calculatePrice {background-color: #cc9900; color: white; font-family: 'Poppins', sans-serif; height: 20px; width: 110px; margin-top: 2px; border: none; border-radius: 5px; cursor: pointer;}
+.calculatePrice:hover {background-color: #0a727d;}
+
+
+@media (max-width: 1083px) {#quantitydark, #quantitymedium, #quantitylight {width: 15px;}}
+@media (max-width: 1083px) {.buttons {width: 50px; margin-right: 0;}}
+
+@media (max-width: 1001px) { 
+  .item { justify-content: left; }
+  #darkorderTotal, #mediumorderTotal, #lightorderTotal {width: 70px; padding-top: 0; padding-right:28px; text-align: right; font-size: 1.5em; color: #CC9900; font-weight: 300; border: none; justify-content: right;}
+  .quantity {width: 90px;}
+  .image img {margin-right: -10px;}
+  .description span {font-size: .8em; margin: 0 0 0 0;}
+  .description span:last-child {font-size: .6em; margin-top: 3px; color: #cc9900;}
+  #quantitydark, #quantitymedium, #quantitylight {width: 26px;}
+}
+
+@media (max-width: 826px) { 
+  .contactcontainer {height: 90%; flex-direction: column; flex-wrap: wrap; justify-content: center;}
+  .formcontainer {height: 100%; width: 100%;}
+  .shopping-cart {width: 100%; height: auto; overflow: hidden; display: flex; flex-direction: row; margin-bottom: 40px; justify-content: center;}
+  .item {height: 100%; width: 25%; flex-wrap: wrap; justify-content: center; padding: 35px 50px 0 50px; border-bottom: none; }
+  .title {position: absolute; background-color: transparent; color:#075962; border-bottom: none; text-align: center; width: 84%; font-weight: bold; font-size: 2.5rem; padding-top:30px;}
+  .like-btn {display: none;}
+  .image img {width: auto; height: 100px; margin-top: 10px; padding-right: 14px;}
+  .description {padding-top: 20px; margin-right: 50%;}
+  .quantity {padding-top: 20px;}
+
+  #lightprice {text-align: center; padding-top: 18px; margin-right: 0;}
+  #mediumprice {text-align: center; padding-top: 18px; margin-right: 0;}
+  #darkprice {text-align: center; padding-top: 18px; margin-right: 0;}
+  #lightorderTotal {text-align: center; padding: 5px 0 0 0;}
+  #mediumorderTotal {text-align: center; padding: 5px 0 0 0;}
+  #darkorderTotal {text-align: center; padding: 5px 0 0 0;}
+
+  .totalitem {display:none;}
+  .totalitemresize {display: flex; flex-direction: row; justify-content: center; margin: 20px 0 20px 0;}
+  .TotalPricing {color: #fff; padding-top: 3px;}
+  input[id="SubTotal"],[id="GST"],[id="MainTotal"] {background-color:#08646e;}
+  .image, .quantity, .description {text-align: center; margin:0;}
+  .buttons {margin-right: 20px;}
+}
+
+@media (max-width: 626px) { 
+  .item {width: 21%; padding: 50px 40px 0 40px;}
+  .title {font-size: 2rem; padding-top:30px; width: 72%;}
+  .shopping-cart {margin-bottom: 20px; padding-bottom: 30px; justify-content: center;}
+
+}
+
+@media (max-width: 545px) { 
+  .item {height: 100%; width: 50%; flex-wrap: wrap; justify-content: center; padding: 90px 10px 0 10px; border-bottom: none;}
+}
+
+@media (max-width: 426px) { 
+  .item {width: 34%; padding: 50px 10px 0 10px;}
+  .title {font-size: 2rem; padding-top:30px; width: 72%;}
+  .shopping-cart {margin-bottom: 20px; padding-bottom: 30px;}
+  #form-title h5 {font-size: 2rem;}
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .title {font-size: 2rem; padding-top:30px; width: 72%;}
+  .item {padding: 25px 10px 0 10px;}
+  .shopping-cart {margin-bottom: 20px; padding-bottom: 30px;}
+ 
+}

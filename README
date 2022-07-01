@@ -1,0 +1,121 @@
+Tanjo Tanning Salon wanted a website that was a main access point for new clients to get in touch with her and to see the products she is selling and show pricing of those products. Due to Tanjo being a cash only company for now, Jo did not need any financial apps to run through her site such as credit, debit, paypal or afterpay.
+
+In order to provide Jo with easy access to enquiries through her site i investigated other options outside of Strapi that were easier for Jo to currently manage while her business is so small. On research i found i was able to create a react form that prompted any enquiries by the contactus or bookings form directly to a GetForm.io Inbox set up for Jo. Like a normal inbox all Jo has to do is go to GetForm.io, enter her email "tanjotanning@gmail.com" and password "tanjotanning" in order to access her inbox which holds all enquireies that come directly from the site into that inbox.
+
+On return from Jo's holiday this weekend, we have intended to meet up and talk about upgrading her GetForm account from a free restricted services to a monthly plan of $10.00 in order to set up a personalised Thank You page with specific links back to the homepage where we are able to also incorporate her brand. Currently it is set to their free Thank You page that returns to the previous page.
+
+Your requirements as tutor:
+Please go to: getform.io
+Enter email address: tanjotanning@gmail.com
+Enter password: tanjotanning
+
+Please keep this tab open while you are marking website and using the forms. Once you submit one from the Tanjo Site you will be able to see it appear in the Tanjo Tanning GetForm Inbox. All security that is set by Get Form is also listed on the Help page under "Is my information secure here?".
+
+Enjoy! Please see below an outline of requirements and how i have met those.
+
+
+
+REQUIREMENTS
+USER STORY: TANJO MANAGER - JO BUTLER
+As the manager I would like to be able to have one web based site where my clients can access all 
+information about me, my services and my pricing as well as sending through a session booking request.
+
+
+Website/app meets the stated requirements and aligns with UI design:
+    ALL REQUIREMENTS ARE MET:
+    Web Based Site - Yes
+    Clients can access - Yes
+    Information about Jos services and pricing displayed - Yes
+    Booking Requests able to be sent to Jo - Yes
+   
+    WEBSITE ALIGNS WITH UI DESIGN
+    -Website aligns with UI Design - Yes
+
+
+Implements search engine optimization (SEO):
+    eg. < title >Tanjo Home 2022 - Welcome to the Home Page of Tanjo Tanning in Christchurch < /title >
+        < meta name="description" content="Christchurch based home Tanning Salon with cheap prices and exceptional results">
+
+
+Implements accessibility features:
+    - Alt tabs used throughout divs.
+    - Buttons used instead of divs.
+    - Requirement settings used throughout forms
+
+
+Implements security features:
+    - use strict used throughout JS
+    - Security measures for inbox are displaying on help page accordion question "Is my information secure 
+      here?".
+
+
+Provides positive, functional, and pleasant user experience:
+    - Colours, themes, design all consistent throughout.
+    - Branding consistent throughout.
+    - Interactive elements for users through slider images, forms, icons, navigation.
+
+
+Implements at least 4 CSS style rules effectively:
+    - Over 20 CSS styles used.
+    - Media queries set for screen widths 1200px, 1000px, 825px, 625px, 425px.
+
+
+Implements at least 6 interactive elements using JavaScript effectively:
+    - CALCULATOR FOR PRICING
+    - SLIDER IMAGES
+    - TOGGLE BUTTON LINES TO CROSS
+    - PHONE NUMBER FORMATTING
+    - ABOUT PAGE SLIDESHOW
+    - TANJO CALCULATOR APP
+
+
+Uses HTML5 structure elements appropriately:
+    - HTML5 elements are structured appropriately.
+
+
+Correctly implements an HTML5 form, including client-side validation:
+    - Contactus Page uses form, client side validation through "required" client cannot submit unless all
+      fields are filled out. "Please fill out this section" is prompted when user hits submit button if a
+      field is not filled in.
+
+
+Uses at least 2 special HTML5 features effectively:
+    - Header and Footers on everypage
+    - Input tag has been used on navigation toggle
+    - Placeholders used through contactus page form
+    - Controlling the display
+    - Regular Expressions - patterns used through contactus form
+    - Adaptability - downloaded goggle plugin "Read Easy - Dyslexia, ADHD, and SSS Helper" all works.
+                   - tabbing works throughout, start tabbing goes through nav menu first.
+    - Email as a property - email is used throughout contactus form
+
+
+Implements at least one of the following: • React.js (at least 4 components) • image sliders • Bootstrap for mobile responsiveness • any tool/technology that you have learnt as a result of your own research:
+    
+    1. Image Sliders
+
+    2. Tools Technology learnt through research: 
+            2.1 - JS calculations on booking.html.
+            2.2 - Image Comparison sliders.
+            2.3 - Toggle button change from lines to cross.
+            2.4 - Jiggle styles on nav icons.
+            2.5 - GetForm React Form Submission - Client wanted a more simple way of accessing incoming 
+                  bookings.
+
+    3. React Components (4 components):
+            3.1 - Footer Copyright text on every page.
+            3.2 - ReactDOM.render(<SubmitButton />, document.getElementsByClassName('form-submit'))
+            3.3 - ReactDOM.render(<MessageContainer />, document.getElementById('messagecontainer'))
+            3.4 - ReactDOM.render(<MessageTitle />, document.getElementById('message-group'))
+            3.5 - ReactDOM.render(<Phone />, document.getElementById('form-group3'))
+                  document.getElementById("phone").addEventListener("keydown", function(e) {
+            3.6 - ReactDOM.render(<Email />, document.getElementById('form-group2'))
+            3.7 - ReactDOM.render(<Name />, document.getElementById('form-group'))
+            3.8 - ReactDOM.render(<FormTitle />, document.getElementById('form-title'))
+            3.9 - <form action='https://getform.io/f/3b1357ba-70af-4d3c-ae47-c50070ef78cf' method='POST'    
+                  enctype='multipart/form-data'>    
+            3.10 -Dropdown menus for tan colours, day and time.
+            3.11 -All emails are directed to protected getform inbox for Jo.  
+
+User help implementation follows user doc best practices:
+User help displayed on nav page Help.

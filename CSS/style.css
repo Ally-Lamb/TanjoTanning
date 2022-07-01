@@ -1,0 +1,295 @@
+/*MAROON - #601f35   GOLD - #cc9900   TEAL - #075962*/
+/*Implements at least 4 CSS style rules effectively*/
+
+/*MAIN PAGE PRESETS-------------------------------------------------------------------------------*/
+    html,body {font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 100; color: #fff; margin: 0; padding: 0; background-color:#075962;}
+    #page {max-width: 1200px; height: 100%; margin: 0 auto; position: relative; background-color: #08646e;}
+
+/*HEADER SECTION----------------------------------------------------------------------------------*/
+    header {z-index: 4; height: 350px; width: 100%; background: url(../Images/Banner1200.jpg) no-repeat center top; position: relative; background-color: #cc9900;}
+    /*Toggle Nav Lines*/
+    nav {width: 100%; height: 50px; position: fixed;}
+    .navcontainer {border: solid pink 2px; display: inline-block; margin-left: 9rem; margin-top: 1.5rem; color: #cc9900; cursor: pointer;}
+    .navcontainer img {height: 41px; width: auto; margin-top: 0;}
+    /*Toggle*/
+    .main {margin: 0 auto; display: block; height: 100%; margin-top: 60px;}
+    .mainInner {display: table; height: 100%; width: 100%; text-align: center;}
+    .mainInner div{display:table-cell; vertical-align: middle; font-size: 3em; font-weight: bold; letter-spacing: 1.25px;}
+    #sidebarMenu {height: 100%; position: fixed; left: 0; width: 230px; margin-top: 0px; transform: translateX(-290px); transition: transform 250ms ease-in-out; background: linear-gradient(180deg, #075962 70%, #1aacbc 100%);}
+    .sidebarMenuInner {margin:0; padding:0; border-top: 1px solid rgba(255, 255, 255, 0.10);}
+    .sidebarMenuInner li {list-style: none; color: #FFF; padding: 15px; padding-left: 30px;cursor: pointer; border-bottom: 1px solid rgba(255, 255, 255, 0.10);}
+    .sidebarMenuInner li a {display: flex; line-height: 27px; padding-top: 5px; transition: all 0.4s; color: #fff; font-size: 14px;  cursor: pointer; text-decoration: none;}
+    .sidebarMenuInner li a:hover {transition: all 0.4s; color: #CC9900; margin-left: 10px;}
+    .sidebarMenuInner li a span {padding-right: 15px; padding-top: 0px;}
+    .material-symbols-outlined {width: 40px; color: #cc9900; font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 52}
+    input[type="checkbox"]:checked ~ #sidebarMenu {transform: translateX(0);}
+    input[type=checkbox] {transition: all 0.3s; box-sizing: border-box; display: none;}
+    .sidebarIconToggle {transition: all 0.3s; box-sizing: border-box; cursor: pointer; position: absolute; z-index: 99; height: 100%; width: 100%; top: 50px; left: 60px; height: 25px; width: 35px;}
+    .spinner {transition: all 0.3s; box-sizing: border-box; position: absolute; height: 5px; width: 100%; border-radius: 4px; background-color: #cc9900;}
+    .horizontal {transition: all 0.3s; box-sizing: border-box; position: relative; float: top; margin-top: 6px;}
+    .diagonal.part-1 {position: relative; transition: all 0.3s; box-sizing: border-box; float: top;}
+    .diagonal.part-2 {transition: all 0.3s; box-sizing: border-box; position: relative; float: top; margin-top: 6px;}
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {transition: all 0.3s; box-sizing: border-box; opacity: 0;}
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {transition: all 0.3s; box-sizing: border-box; transform: rotate(135deg); margin-top: 16px;}
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {transition: all 0.3s; box-sizing: border-box; transform: rotate(-135deg);  margin-top: -16px;}
+    /*ICONS*/
+    .MenuIconboxes {display: flex; left: 15px; position: absolute; z-index: 4; margin-top:30px;}
+    .MenuIconboxes img{height:40px; width: auto;}
+    .FacebookMenuIcon {width: 40px; height:40px; transition: all 0.2s; margin-right:30px;}
+    .FacebookMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+    @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+    .InstagramMenuIcon {width: 40px; height:40px; transition: all 0.2s; margin-right:30px;}
+    .InstagramMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+    @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+    .EmailMenuIcon {width: 40px; height:40px; transition: all 0.2s;}
+    .EmailMenuIcon:hover {animation: jiggle 0.3s;animation-iteration-count: infinite;}
+    @keyframes jiggle {0% {transform: rotate(-6deg);} 50% {transform: rotate(6deg);}}
+    /*Wave*/
+    .container {height: 140px; z-index: 2; align-items: center; overflow: hidden; margin-top:-5px;}
+    .mainheading {width: 100%; padding-top: 25px; position: absolute; text-align: center; justify-content: center; z-index: 3;}
+    .mainheading img {height: 40px;}
+    .ocean {z-index: 1; height: 1%; width: 100%; position: relative; bottom: 0; left: 0;}
+    .wave { background: url(../Images/wave.svg) repeat-x; position: absolute; top: 0; width: 6400px; height: 102.5323px; animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite; transform: translate3d(0, 0, 0);}
+    .wave:nth-of-type(2) {top: 0px; animation: wave 4s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 6s ease -1.125s infinite; opacity: 1;}
+    @keyframes wave {0% {margin-left: 0;}100% {margin-left: -1600px; }}
+    @keyframes swell {0%,100% {transform: translate3d(0, -10px, 0);} 50% {transform: translate3d (0, 5px, 0);}}
+    .endWave{display:none;}
+
+
+
+
+/*MID SECTION---------------------------------------------------------------------------------------*/
+/*INDEX PAGE SECTION MID - Slider Images*/  
+    .img-comp-container {position: relative; height: 270px; width: 1200px; margin-bottom: 40px;}
+    .img-comp-img {position: absolute; width: 1200px; height: 270px; overflow: hidden;}
+    .img-comp-img img {display: block;}
+    .img-comp-slider {position: absolute; z-index: 9; cursor: ew-resize; width: 154px; height: 270px; background-image: url(../Images/scrollarrow.png); opacity: 10; border-radius: 0;}
+    /*BODY TEXT*/
+    .bodytextbox {text-align: center; line-height: 1.5; width: 100%; height:auto; padding-left: 135px; padding-right: 135px; padding-bottom:50px;}
+    .bodytextbox a {font-size: 1em; color: white; letter-spacing: .2px;}
+    .dull{color:rgba(238, 238, 238, 0.482)}
+
+
+/*ABOUT PAGE SECTION MID*/
+    .profilecontainer {width: 100%; height: auto; padding: 0 60px 0 60px;text-align: justify;}
+    .profilecontainer img {height:300px; width: 300px; float: left; margin:0 20px 10px 0;}
+    .profilecontainer p {text-align: justify;}
+
+
+/*ABOUT PAGE / PRODUCTS PAGE SLIDE SHOWS SECTION MID */
+    *{box-sizing:border-box}
+    .slideshow-container {margin: auto; max-width: 1200px; height: auto; position: relative;}
+    .mySlides {display: none;}
+    .prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px; color: #ffff; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
+    .next {right: 0; border-radius: 3px 0 0 3px;}
+    .prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+    .text {color: #f2f2f2; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 8px; width: 100%; text-align: center;}
+    .numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+    .dot {cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #FFF; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+    .active, .dot:hover {background-color: #CC9900;}
+    .fade {animation-name: fade; animation-duration: 1.5s;}
+    @keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+
+/*PRODUCT PAGE SECTION MID*/
+    .productmidsectionbox { padding: 30px 0 30px 0; width: 100%; height: auto; display: flex; flex-direction: row; border-bottom:rgba(238, 238, 238, 0.326) solid 1px;}
+    .productsectioncontainers {width: 30%; height: auto; padding: 20px; text-align: justify;}
+    .productsectioncontainers img {width: auto; height: 200px; margin-left: 55px;}
+    .productsectionlegs {position: relative; width: 160px; height: auto; margin: 0 60px 30px 0;}
+    .productsectionlegs img {width: 100%; height: 100%; margin: 0 60px 0 0;}
+    .frontleg{position: absolute; z-index: 45; animation: jiggle 0.6s;animation-iteration-count: infinite;}
+    @keyframes jiggle {0% {transform: rotate(-1deg);} 50% {transform: rotate(6deg);}}
+    .backleg{position: absolute; z-index: 46; animation: jiggle 0.8s; animation-iteration-count: infinite;}
+    @keyframes jiggle {0% {transform: rotate(-1deg);} 50% {transform: rotate(-9deg);}}
+    .legheading{position: absolute; z-index: 47;margin-top:20px;}
+    .productsectiontext {width: 70%; padding-right:60px; text-align: justify;}
+    .productsectiontext a {color: #fff;}
+    .productsectionicoinfobox {width:100%; height: auto; display: flex; flex-direction: row; margin-top: 30px; }
+    .productsectioniconcontainer {display: flex; flex-direction: column; height: 20%; width: 21%; }
+    .productsectioniconcontainer img {height: 40px; width: 40px; margin-left: 35%;}
+    .productsectioniconcontainer a {color: #fff; font-size: .6rem; height: auto; width: 100%; text-align: center; margin-top: 6px;}
+
+
+/*BOOKING PAGE SECTION MID*/
+    #colorselection, #dayofweek, #time {width: 100%; padding: 10px 10px; margin: 0 0; display: inline-block; border: 1.5px solid #075962; border-radius: 2px;}
+
+
+/*CONTACT US SECTION MID*/
+    .contactcontainer {width: 100%; height: 700px; display: flex; flex-direction: row; padding: 0 60px 0 60px;}
+    .contactcontainer iframe {width: 49%; height: auto; border-radius: 20px; margin-right: 20px;}
+    .formcontainer {display: flex; padding: 60px 60px; flex-direction: row; align-items: center; width: 49%; height: 700px; justify-content: space-around; margin: 0 auto; background: rgb(255, 255, 255); border-radius: 20px; box-shadow: 0px 15px 16px 0.17px rgba(0, 0, 0, 0.05);}
+    .overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(3px); z-index: 5;}
+    .signup { margin-bottom: 150px; }
+    input[id="name"], [id="email"], [id="phone"] {width: 100%; height:auto; display: block; border: none; border-bottom: 1px solid #999; padding: 6px 0px; font-family: "Poppins", sans-serif; box-sizing: border-box; outline: none; appearance: unset;}
+    input[id="name"]:focus, [id="email"]:focus, [id="phone"]:focus {outline: none; box-shadow: none;}
+    input[id="name"], [id="email"], [id="phone"] { appearance: checkbox;}
+    textarea[id="message"] {width: 100%; height:100%; display: block; padding: 10px 10px; font-family: "Poppins", sans-serif; box-sizing: border-box; border: none; outline: none; appearance: unset;}
+    textarea[id="message"] { appearance: checkbox;}
+    textarea[id="message"]:focus {outline: none; box-shadow: none;} 
+    h5 {margin: 0; padding: 0; font-weight: 700; color: #075962; font-family: "Poppins", sans-serif; font-size: 2.5rem;}
+    h6 {margin: 0; padding: 0; font-weight: 700; color: #075962; font-family: "Poppins", sans-serif; font-size: 1.1rem;}
+    #message-group {position: relative; margin-bottom: 10px; margin-top: 30px;}
+    #messagecontainer {width: 100%; height: 150px; border:#075962 solid 1.5px;}
+    #bookingdefaultcontainer {width: 100%; height: 30px; background-color:#075962; border-radius: 2px;}
+    #bookingdefaultcontainer input{border: 0; padding: 7px 10px 7px 10px;background-color:#075962; color: #fff;}
+    .form {margin: 0 auto;  width: 600px;}
+    .form-title {margin-bottom: 10px; cursor: pointer;}
+    /*REGISTER BUTTON*/
+    .formcontainer button {display: inline-block; background: #075962; color: #fff; border: none; width: 150px; height: 40px; padding: 10px 21px; border-radius: 10px; margin-top: 12px; cursor: pointer;}
+    .formcontainer button:hover {background: #053d43;}
+    /*x2 CONTAINERS THAT HOLD LEFT AND RIGHT CONTAINERS*/
+    .signup-form {margin: 0px; width: 100%; padding-left: 0px;}
+    .register-form {width: 100%; margin-right: 20px;}
+    #form-group, #form-group2, #form-group3, #tanningoptions #personaldetailsheading {position: relative; margin-bottom: 0px; overflow: hidden;}
+    #form-group:last-child {margin-bottom: 0;}
+    .small {font-size: .6em; color:#075962;margin-bottom: 10px; margin-top:3px;}
+    /*ICON PLACEMENTS*/
+    label {position: absolute; left: 0; top: 35%; transform: translateY(-50%); color: #cc9900;}
+
+
+/*HELP SECTION MID*/
+    .accordionmaincontainer {margin: 15px auto; width: 85%;}
+    /*ACCORDION MAIN HEADER AND BUTTON*/
+    .accordion, .accordionlast {background-color: #08646e; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; font-size: 1.2rem; border-top: 1.5px solid #CC9900;}
+    .accordion a, .accordionlast a {color: #ffff; transition: all 0.4s;}
+    .accordion a:active, .accordion a:hover, .accordionlast a:active, .accordionlast a:hover {transition: all 0.4s; color: #CC9900; margin-left: 10px;}
+    .accordion.active {border-bottom: none;}
+    /*ACCORDION LAST MAIN HEADER AND BUTTON*/
+    .accordionlast {border-bottom: 1.5px solid #CC9900;}
+    /*DROP DOWN INFORMATION CONTAINER*/
+    .contactuspanel {padding: 0 60px 0 29px; display: none; overflow: hidden; font-size: .9rem; margin-bottom: 30px; margin-left: 0px; height: auto; background-color: #08646e;  color: #ffff;}
+    .contactuspanel {text-align: justify;}
+    /*PLUS / NEGATIVE SYMBOL*/
+    .accordion:after {font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; font-size: 18px; color: #FFFF; float: right; margin-left: 5px;}
+    .accordionlast:after {font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; font-size: 18px; color: #FFFF; float: right; margin-left: 5px;}
+    .active:after {font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f068"; color: #CC9900;}
+
+
+/*FOOTER------------------------------------------------------------------------------------------------*/
+    footer {width: 100%; height: 198px; color: #fff; position: sticky; font-size: 1rem; overflow: hidden;}
+    .footercontentcontainer {width: 95%; bottom: 20px; left: 30px; position: absolute; z-index: 4; display: flex; flex-direction: row;}
+    .icon {transition: all 0.2s; width:50px; height:50px; margin-right:15px;}
+    .icon img {width: 100%; height: 100%;}
+    .icon img:hover {transition: all 0.2s; transform: scale(1.2); cursor: pointer;}
+    #mydiv {height: 50px; width: auto; padding-top:30px;}
+    .wave2 {background: url(../Images/wave2.svg) repeat-x; position: absolute; top: 0; width: 6400px; height: 198px; animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite; transform: translate3d(0, 0, 0);}
+    .wave2:nth-of-type(2) {top: 0px; animation: wave2 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell2 8s ease -1.125s infinite; opacity: 1;}
+    @keyframes wave2 {0% {margin-left: 0;}100% {margin-left: -1600px; }}
+    @keyframes swell2 {0%, 100% {transform: translate3d(0, -2px, 0);} 50% {transform: translate3d (0, 5px, 0);}}
+    .endWave2{display:none;}
+
+   
+/*----------------------------------------------------------------------------------------------*/
+/*MEDIA QUERIES*/
+
+/*DESKTOP SCREENS*/
+  @media screen and (max-width: 1200px) {
+      .container {width: calc(100%-1px); max-width: 100%;}
+      .close-modal {top: 1.2rem; right: 4rem;}
+      }
+  @media screen and (max-width: 1000px) {
+      header {height: 294px; width: 100%; background: url(../Images/Banner1000.jpg); position: relative; background-color: #cc9900;}
+      /*Index*/
+      .bodytextbox {padding-left: 70px; padding-right: 70px;}
+      .bodytextbox a {font-size: 1em; color: white; letter-spacing: .2px;}
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 225px; width: 1000px;}
+      .img-comp-slider {height: 225px; width: 112.5px; background-image: url(../Images/scrollarrow1000.png);}
+      .productmidsectionbox {padding: 30px 0 30px 0; width: 100%; height: auto; display: flex; flex-direction: row; border-bottom:rgba(238, 238, 238, 0.326) solid 1px;}
+      .productsectioncontainers {width: 30%; height: auto; text-align: justify;}
+      .productsectioncontainers img {width: auto; height: 200px; margin-left: 30px;}
+    }
+  @media screen and (max-width: 900px) {
+      /*Index*/
+      .bodytextbox {padding-left: 70px; padding-right: 70px;}
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 202.5px; width: 900px;}
+      .img-comp-slider {height: 202.5px; width: 101.25px; background-image: url(../Images/scrollarrow900.png);}
+      }
+
+
+/*TABLET SCREENS*/
+  @media screen and (max-width: 825px) {
+      header {height: 242px; width: auto; background: url(../Images/Banner825.jpg); position: relative; background-color: #cc9900;}
+      /*Index*/
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 185.6px; width: 825px;}
+      .img-comp-slider {height: 185.6px; width: 92.8px; background-image: url(../Images/scrollarrow825.png);}
+      .productsectioncontainers img {width: auto; height: 200px; margin-left: 20px; margin-right:20px;}
+      .sidebarIconToggle {top: 45px; left: 45px;}
+    }
+  @media screen and (max-width: 800px) {
+      /*Index*/
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 180px; width: 800px;}
+      .img-comp-slider {height: 180px; width: 90px; background-image: url(../Images/scrollarrow800.png);}
+      .signup-form {width: 100%; margin: 0; padding: 0 0 30px 0;}
+      .form-title {text-align: center;}
+      .accordion, .accordionlast {font-size: .87rem;}
+      .productmidsectionbox {padding: 30px 0 30px 0; width: 100%; height: auto; display: flex; flex-direction: row; border-bottom:rgba(238, 238, 238, 0.326) solid 1px;}
+      .productsectioncontainers {width: 30%; height: auto; text-align: justify;}
+      .productsectioncontainers img {width: auto; height: 150px; margin: 0 25px 0 25px;}
+      .productsectiontext {width: 80%; text-align: justify;}
+      .productsectiontext a {color: #fff; font-size: .8rem;}
+      .productsectionicoinfobox {width:100%; height: auto; display: flex; flex-direction: row; margin-top: 10px; justify-content: center; }
+      .productsectioniconcontainer {display: flex; flex-direction: column; height: 10%; width: 21%; margin-right: 2%;}
+      .productsectioniconcontainer a {color: #fff; font-size: .4rem; height: auto; width: 100%; text-align: center;}
+      .productsectionlegs {position: relative; width: 160px; height: auto; margin: 10px 30px 20px 0;}
+      .legheading{margin-top:10px;}
+      .sidebarIconToggle {top: 45px; left: 45px;}
+      }
+  @media screen and (max-width: 768px) {
+      /*Index*/
+      .bodytextbox {padding-left: 50px; padding-right: 50px;}
+      .bodytextbox a {font-size: 1em; color: white; letter-spacing: .2px;}
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 172.8px; width: 768px;}
+      .img-comp-slider {height: 172.8px; width: 86.4px; background-image: url(../Images/scrollarrow768.png);}
+      /*Booking/Contactus*/
+      .contactcontainer {display: flex; flex-direction: column; margin-bottom: 130px;}
+      .contactcontainer iframe {width: 100%; height: 900px; border-radius: 20px; margin-right: 20px;}
+      .formcontainer {margin-top:30px; width: 100%; }
+      footer {font-size: .8rem;}
+      .sidebarIconToggle {top: 40px; left: 30px;}
+      }
+
+/*MOBILE SCREENS*/
+  @media screen and (max-width: 625px) {
+      header {height: 184px; width: auto; background: url(../Images/Banner625.jpg); background-color: #cc9900;}
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 141px; width: 625px;}
+      .img-comp-slider {height: 141px; width: 70.5px; background-image: url(../Images/scrollarrow625.png);}
+      footer {font-size: .6rem;}
+      .productsectioncontainers img {width: auto; height: 150px; margin-left: 15px; margin-right:25px;}
+      .sidebarIconToggle {top: 40px; left: 30px;}
+    }
+  @media screen and (max-width: 600px) {
+      .column {flex: 100%; max-width: 100%;}/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 135px; width: 600px;}
+      .img-comp-slider {height: 135px; width: 67.5px; background-image: url(../Images/scrollarrow600.png);}
+      .productmidsectionbox {padding: 30px 0 20px 0; height: auto; display: flex; flex-direction: row; border-bottom:rgba(238, 238, 238, 0.326) solid 1px;}
+      .productsectioncontainers {height: auto; text-align: justify;}
+      .productsectioncontainers img {width: auto; height: 130px; margin: 0 25px 0 10px;}
+      .productsectiontext {width: 100%; text-align: justify; line-height:1.1;}
+      .productsectiontext a {color: #fff; font-size: .7rem; }
+      .productsectionicoinfobox {width:100%; height: auto; display: flex; flex-direction: row; margin-top: 10px; justify-content: center; }
+      .productsectioniconcontainer {display: flex; flex-direction: column; height: 10%; width: 21%; margin-right: 2%;}
+      .productsectioniconcontainer img { height: 27px; width: 40px; padding-right: 15px;} 
+      .productsectioniconcontainer a {color: #fff; font-size: .4rem; height: auto; width: 100%; text-align: center;}
+      .productsectionlegs {position: relative; height: 90px; margin: 20px 40px 20px 0px;}
+      footer {font-size: .5rem;}  
+      .sidebarIconToggle {top: 40px; left: 30px;}
+      }
+
+      
+  @media screen and (max-width: 425px) {
+      header {height: 125px; width: auto; background: url(../Images/Banner425.jpg); position: relative; background-color: #cc9900;}
+      .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img {height: 95.5px; width: 425px;}
+      .img-comp-slider {height: 95.5px; width: 47.75px; background-image: url(../Images/scrollarrow425.png);}
+      footer {font-size: .4rem;} 
+      .accordion, .accordionlast {font-size: .8rem;}
+      .productsectioncontainers img {width: auto; height: 120px; margin-left: 0px; margin-right:25px;}
+      .productsectionlegs{position: relative; height: 90px; margin-left: -40px; margin-top:33px;}
+      .sidebarIconToggle {height: 100%; width: 100%; top: 30px; left: 17px; height: 25px; width: 35px;}
+      .formcontainer {padding: 30px 30px;}
+
+      }
+
+
+
+
+      
