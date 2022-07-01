@@ -207,13 +207,15 @@
 
 
 /*TABLET SCREENS*/
-  @media screen and (max-width: 825px) {
+  @media screen and (max-width: 826px) {
       header {height: 242px; width: auto; background: url(../Images/Banner825.jpg); position: relative; background-color: #cc9900;}
       /*Index*/
       .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 185.6px; width: 825px;}
       .img-comp-slider {height: 185.6px; width: 92.8px; background-image: url(../Images/scrollarrow825.png);}
       .productsectioncontainers img {width: auto; height: 200px; margin-left: 20px; margin-right:20px;}
       .sidebarIconToggle {top: 45px; left: 45px;}
+      .productsectiontext {width: 40%; padding-right: 40px;}
+      .productsectionlegs {padding-right: 30px;}
     }
   @media screen and (max-width: 800px) {
       /*Index*/
@@ -249,13 +251,15 @@
       }
 
 /*MOBILE SCREENS*/
-  @media screen and (max-width: 625px) {
+  @media screen and (max-width: 626px) {
       header {height: 184px; width: auto; background: url(../Images/Banner625.jpg); background-color: #cc9900;}
       .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img  {height: 141px; width: 625px;}
       .img-comp-slider {height: 141px; width: 70.5px; background-image: url(../Images/scrollarrow625.png);}
       footer {font-size: .6rem;}
       .productsectioncontainers img {width: auto; height: 150px; margin-left: 15px; margin-right:25px;}
       .sidebarIconToggle {top: 40px; left: 30px;}
+      .productsectionlegs {padding-right: 20px;}
+      .productsectiontext {padding-right: 30px;}
     }
   @media screen and (max-width: 600px) {
       .column {flex: 100%; max-width: 100%;}/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -276,17 +280,17 @@
       }
 
       
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
       header {height: 125px; width: auto; background: url(../Images/Banner425.jpg); position: relative; background-color: #cc9900;}
       .img-comp-container, .img-comp-img, .img-comp-img img, .img-comp-overlay, .img-comp-overlay img {height: 95.5px; width: 425px;}
       .img-comp-slider {height: 95.5px; width: 47.75px; background-image: url(../Images/scrollarrow425.png);}
       footer {font-size: .4rem;} 
       .accordion, .accordionlast {font-size: .8rem;}
       .productsectioncontainers img {width: auto; height: 120px; margin-left: 0px; margin-right:25px;}
-      .productsectionlegs{position: relative; height: 90px; margin-left: -40px; margin-top:33px;}
       .sidebarIconToggle {height: 100%; width: 100%; top: 30px; left: 17px; height: 25px; width: 35px;}
       .formcontainer {padding: 30px 30px;}
-
+      .productsectionlegs {margin: 0 30px 0 0;}
+      .productsectiontext {padding-right: 20px; width: 45%;}
       }
 
 
